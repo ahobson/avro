@@ -913,7 +913,7 @@ avro_schema_from_json_t(json_t *json, avro_schema_t *schema,
 					return EINVAL;
 				}
 				field_rval =
-				    avro_schema_from_json_t(json_field,
+				    avro_schema_from_json_t(json_field_type,
 							    &json_field_type_schema,
 							    named_schemas, record_namespace);
 				if (field_rval) {
